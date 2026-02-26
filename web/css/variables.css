@@ -85,6 +85,6 @@
   --transition-smooth: 600ms cubic-bezier(0.22, 1, 0.36, 1);
 
   /* === Header === */
-  --header-height: 80px;
-  --header-height-scrolled: 64px;
+  --header-height: 64px;
+  --header-height-scrolled: 52px;
 }

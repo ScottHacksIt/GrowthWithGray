@@ -96,28 +96,28 @@
 }
 
 /* CTA nav link */
-.nav-link--cta {
+.nav-link.nav-link--cta {
   background-color: var(--color-primary);
-  color: var(--color-text-inverse);
+  color: #FFFFFF;
   padding: var(--space-sm) var(--space-lg);
   border-radius: var(--radius-full);
   text-decoration: none;
   transition: background-color var(--transition-fast), transform var(--transition-fast);
 }
 
-.nav-link--cta::after {
+.nav-link.nav-link--cta::after {
   display: none;
 }
 
-.nav-link--cta:hover {
+.nav-link.nav-link--cta:hover {
   background-color: var(--color-primary-light);
-  color: var(--color-text-inverse);
+  color: #FFFFFF;
   transform: translateY(-1px);
 }
 
-.nav-link--cta.is-active {
+.nav-link.nav-link--cta.is-active {
   background-color: var(--color-primary-dark);
-  color: var(--color-text-inverse);
+  color: #FFFFFF;
 }
 
 /* Hamburger */
@@ -443,14 +443,14 @@
   gap: var(--space-sm);
 }
 
-.site-footer a:not(.btn) {
+.site-footer a:not(.btn):not(.nav-link):not(.logo) {
   color: var(--color-text-inverse);
   text-decoration: none;
   text-decoration-color: transparent;
   transition: text-decoration-color var(--transition-fast);
 }
 
-.site-footer a:not(.btn):hover {
+.site-footer a:not(.btn):not(.nav-link):not(.logo):hover {
   text-decoration: underline;
   text-decoration-color: var(--color-secondary);
   color: var(--color-text-inverse);
@@ -458,18 +458,21 @@
 
 .social-links {
   display: flex;
-  gap: var(--space-md);
+  flex-direction: column;
+  gap: var(--space-sm);
 }
 
 .social-links a {
   display: flex;
   align-items: center;
-  gap: var(--space-sm);
+  gap: 0;
 }
 
 .social-icon {
   width: 20px;
   height: 20px;
+  stroke: var(--color-text-inverse);
+  flex-shrink: 0;
 }
 
 .footer-bottom {
@@ -487,12 +490,13 @@
 /* ---- Hero Section (Home) ---- */
 
 .hero {
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top: var(--header-height);
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-4xl);
   background: linear-gradient(
     135deg,
     var(--color-primary-dark) 0%,
