@@ -14,9 +14,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(250, 246, 241, 0.98);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background-color: var(--color-bg);
     display: flex;
     align-items: center;
     justify-content: center;
