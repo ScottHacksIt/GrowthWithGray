@@ -4,18 +4,18 @@
 
 :root {
   /* === Colors === */
-  --color-primary:        #6B2D3E;
-  --color-primary-light:  #8A4358;
-  --color-primary-dark:   #4E1F2D;
+  --color-primary:        #582A4E;
+  --color-primary-light:  #8D497F;
+  --color-primary-dark:   #3C1035;
 
-  --color-secondary:      #C4A0A0;
-  --color-secondary-light:#D4B8B8;
+  --color-secondary:      #C497BA;
+  --color-secondary-light:#E1C7DB;
 
-  --color-accent:         #C8956A;
-  --color-accent-light:   #D4A880;
+  --color-accent:         #B270A5;
+  --color-accent-light:   #CDA7C6;
 
-  --color-bg:             #FAF6F1;
-  --color-bg-alt:         #F3EDE5;
+  --color-bg:             #FAF4F9;
+  --color-bg-alt:         #F4E7F1;
   --color-surface:        #FFFFFF;
 
   --color-text:           #2D2926;

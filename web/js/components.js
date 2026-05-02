@@ -5,7 +5,9 @@
 
 async function loadComponent(elementId, filePath) {
   try {
-    const response = await fetch(filePath);
+    const response = await fetch(filePath, {
+      cache: 'no-store'
+    });
     if (!response.ok) throw new Error(`Failed to load ${filePath}: ${response.status}`);
     const html = await response.text();
     const el = document.getElementById(elementId);
