@@ -48,6 +48,71 @@
     margin-top: var(--space-md);
   }
 
+  /* Dropdown on mobile */
+  .dropdown-chevron {
+    display: none;
+  }
+
+  .dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text);
+    padding: var(--space-xs);
+    margin-left: var(--space-sm);
+  }
+
+  .dropdown-toggle svg {
+    width: 24px;
+    height: 24px;
+    transition: transform var(--transition-base);
+  }
+
+  .has-dropdown.is-open .dropdown-toggle svg {
+    transform: rotate(180deg);
+  }
+
+  .dropdown-menu {
+    position: static;
+    transform: none;
+    box-shadow: none;
+    border-radius: 0;
+    min-width: auto;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    opacity: 1;
+    visibility: visible;
+    transition: max-height var(--transition-base);
+    background-color: transparent;
+  }
+
+  .has-dropdown:hover .dropdown-menu,
+  .has-dropdown:focus-within .dropdown-menu {
+    /* Override desktop hover — mobile uses JS toggle only */
+    max-height: 0;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .has-dropdown.is-open .dropdown-menu {
+    max-height: 700px;
+  }
+
+  .dropdown-link {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    text-align: center;
+    padding: var(--space-xs) var(--space-md);
+    color: var(--color-text-light);
+    white-space: normal;
+  }
+
   /* Hero adjustments */
   .hero-buttons {
     flex-direction: column;
