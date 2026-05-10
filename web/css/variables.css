@@ -59,7 +59,7 @@
   --space-2xl:  3rem;
   --space-3xl:  4rem;
   --space-4xl:  6rem;
-  --space-section: clamp(4rem, 8vw, 8rem);
+  --space-section: clamp(2rem, 4vw, 4rem);
 
   /* === Layout === */
   --container-max:     1200px;
