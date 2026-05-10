@@ -19,8 +19,8 @@ async function loadComponent(elementId, filePath) {
 
 document.addEventListener('DOMContentLoaded', async () => {
   await Promise.all([
-    loadComponent('site-header', 'partials/header.html?v=1.0.9'),
-    loadComponent('site-footer', 'partials/footer.html?v=1.0.9')
+    loadComponent('site-header', 'partials/header.html?v=1.0.10'),
+    loadComponent('site-footer', 'partials/footer.html?v=1.0.10')
   ]);
 
   // Signal that components are loaded so other scripts can initialize
